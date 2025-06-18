@@ -24,8 +24,5 @@ app.get('/newapi', (req, res)=>{
     return res.send("Are are new api WORKING")
 })
 
-app.get('*', (req, res) => {
-  res.redirect('/');
-});
 
 app.listen(PORT, ()=>console.log("Server running on port " + PORT))
