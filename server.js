@@ -21,5 +21,8 @@ app.use('/api/image' , imageRouter)
 app.get('/', (req, res)=>{
     return res.send("API WORKING")
 })
+app.get('/newapi', (req, res)=>{
+    return res.send("API WORKING")
+})
 
 app.listen(PORT, ()=>console.log("Server running on port " + PORT))
